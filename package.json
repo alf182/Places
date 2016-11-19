@@ -1,0 +1,27 @@
+{
+  "name": "places",
+  "version": "1.0.0",
+  "description": "A little example of google places",
+  "main": "index.js",
+  "scripts": {
+    "public": "mkdir -p public",
+    "build": "npm run public",
+    "serve": "NODE_PATH=. babel-node index.js --presets es2015",
+    "start": "npm run serve"
+  },
+  "keywords": [
+    "google",
+    "places"
+  ],
+  "author": "Luis Quispe",
+  "license": "MIT",
+  "dependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-es2015": "^6.18.0",
+    "express": "^4.14.0",
+    "express-handlebars": "^3.0.0",
+    "handlebars": "^4.0.6",
+    "mongoose": "^4.6.7",
+    "request": "^2.78.0"
+  }
+}
